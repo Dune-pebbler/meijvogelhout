@@ -1,0 +1,44 @@
+input {
+  outline-color: #403635 !important;
+  font-family: $font2 !important;
+}
+textarea {
+  outline-color: #403635 !important;
+  font-family: $font2 !important;
+}
+select {
+  outline-color: #403635 !important;
+  font-family: $font2 !important;
+}
+label {
+  outline-color: #403635 !important;
+  font-family: $font2 !important;
+}
+.gform-body {
+  a {
+    color: #403635 !important;
+  }
+}
+.gfield_validation_message {
+  display: none;
+}
+#gform_submit_button_1 {
+  font-family: $font2 !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  display: inline-block !important;
+  text-transform: none !important;
+  border: 2px solid $color1 !important;
+  border-radius: 46px !important;
+  text-decoration: none !important;
+  background-color: $color1 !important;
+  color: $white !important;
+  padding: 10px 24px !important;
+  font-size: 18px !important;
+  &:hover {
+    color: $color1 !important;
+    border: 2px solid $color1 !important;
+    background-color: rgba($white, 0) !important;
+    transition: all 0.3s ease !important;
+  }
+}

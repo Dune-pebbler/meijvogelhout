@@ -1,0 +1,27 @@
+.text_block {
+  padding: 80px 0px;
+  h2 {
+    font-family: $font1;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: $font2;
+    line-height: 28px;
+  }
+  @media only screen and (max-width: 480px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .text-content {
+      padding-left: 16px;
+      padding-right: 16px;
+      text-align: center;
+    }
+    .row {
+      justify-content: center;
+    }
+    .col-sm-1 {
+      display: none;
+    }
+  }
+}

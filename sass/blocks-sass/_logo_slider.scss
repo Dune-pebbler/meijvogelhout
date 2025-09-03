@@ -1,0 +1,41 @@
+.logo_slider {
+  padding: 80px 0px;
+  overflow: hidden; // Ensures no overflow outside the container is visible
+
+  .logo__slider-text {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+  }
+
+  &__img-container {
+    width: 50%; // Keeps the container full width
+    margin: 0 auto; // Centers the container
+    display: flex; // Added for image alignment
+    justify-content: center; // Centers image horizontally
+    align-items: center; // Centers image vertically
+
+    img {
+      width: 80%; // Keeps the image size scaled
+      height: auto; // Maintains aspect ratio
+      object-fit: contain; // Ensures the image fits within its container
+    }
+  }
+
+  @media (max-width: 767px) {
+    .logo-carousel .owl-stage {
+      display: flex;
+      align-items: center;
+      overflow: hidden; // Hides overflowing elements in smaller screens
+    }
+  }
+
+  @media (max-width: 577px) {
+    .logo__slider-text {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}

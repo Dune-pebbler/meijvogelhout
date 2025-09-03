@@ -1,0 +1,86 @@
+.categorie_cards {
+  padding: 80px 0px;
+
+  .categorie-card {
+    margin: 15px 0px;
+    .child-page-card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.2s ease-in-out;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 5px 5px 5px grey;
+
+      &:hover {
+        .card-image {
+          &::after {
+            opacity: 0.8;
+          }
+
+          img {
+            transform: scale(1.05);
+            filter: grayscale(0%); // Remove grayscale on hover
+          }
+        }
+
+        .card-title {
+          background-color: $color4;
+          transition: background-color 0.3s ease;
+        }
+      }
+
+      .card-image {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-fit: full;
+          position: relative;
+          z-index: 1;
+          filter: grayscale(100%); // Add grayscale by default
+          transition: all 0.5s ease, filter 0.3s ease; // Add filter to the transition
+        }
+      }
+
+      .card-title {
+        padding: 15px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        background-color: $color3;
+        transition: background-color 0.3s ease;
+        font-family: $font2;
+
+        h2 {
+          font-size: 18px;
+          margin: 0 0 10px 0;
+          color: #fff;
+        }
+
+        p {
+          margin-top: auto;
+          font-size: 1rem;
+          color: #fff;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .categorie_cards {
+    margin-top: 30px;
+  }
+}

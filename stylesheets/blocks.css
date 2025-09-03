@@ -1,0 +1,46 @@
+.hero {
+  position: relative;
+}
+
+.hero .hero-banner {
+  position: relative;
+}
+
+.hero .hero-banner img {
+  width: 100%;
+  height: calc(100vh - 59px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+@media only screen and (max-width: 480px) {
+  .hero .hero-banner img {
+    height: 400px;
+  }
+}
+
+.hero .hero__banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(116, 102, 97, 0.75);
+  color: #fff;
+}
+
+.hero .hero__overlay-text {
+  max-width: 900px;
+}
+/*# sourceMappingURL=blocks.css.map */

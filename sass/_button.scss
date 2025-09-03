@@ -1,0 +1,113 @@
+.btn_lg_bg {
+  border: 2px solid $color1;
+  border-radius: 46px;
+  text-decoration: none;
+  background-color: $color1;
+  color: $white;
+  padding: 10px 24px;
+  font-size: 18px;
+  &:hover {
+    color: $color1;
+    border: 2px solid $color1;
+    background-color: rgba($white, 0);
+    transition: all 0.3s ease;
+  }
+}
+.btn_be_bg {
+  border: 2px solid $white;
+  border-radius: 46px;
+  text-decoration: none;
+  background-color: $white;
+  color: $color1;
+  padding: 10px 24px;
+  font-size: 18px;
+  &:hover {
+    border: 2px solid $color1;
+    color: $color1;
+    background-color: rgba($white, 0);
+    transition: all 0.3s ease;
+  }
+}
+.btn_da_bg {
+  border: 2px solid $white;
+  border-radius: 46px;
+  text-decoration: none;
+  background-color: $color1;
+  color: $white;
+  padding: 10px 24px;
+  font-size: 18px;
+  &:hover {
+    color: $color1;
+    border: 2px solid $color1;
+    background-color: rgba($white, 0);
+    transition: all 0.3s ease;
+  }
+}
+.btn_gr_bg {
+  border: 2px solid $white;
+  border-radius: 46px;
+  text-decoration: none;
+  background-color: $white;
+  color: $color3 !important;
+  padding: 10px 24px;
+  font-size: 18px;
+  &:hover {
+    color: $white !important;
+    border: 2px solid $white;
+    background-color: rgba($white, 0);
+    transition: all 0.3s ease;
+  }
+}
+.btn_hd_bg {
+  border: 2px solid $white;
+  border-radius: 46px;
+  text-decoration: none;
+  background-color: $color1;
+  color: $white;
+  padding: 6px 24px;
+  font-size: 18px;
+  &:hover {
+    color: $color1;
+    border: 2px solid $color1;
+    background-color: $white;
+    transition: all 0.3s ease;
+  }
+}
+
+.btn {
+  font-family: $font2;
+  font-weight: 600;
+  font-size: 16px;
+  display: inline-block;
+  text-transform: none;
+}
+.btn_slider {
+  border: 2px solid $color1;
+  border-radius: 46px;
+  text-decoration: none;
+  background-color: $color1;
+  color: $white;
+  padding: 10px 24px;
+  font-size: 18px;
+  &:hover {
+    color: $color1;
+    border: 2px solid $color1;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+}
+.btn_txt_img {
+  border: 2px solid $color1;
+  border-radius: 46px;
+  text-decoration: none;
+  background-color: $color1;
+  color: white !important;
+  padding: 10px 24px;
+  font-size: 18px;
+  &:hover {
+    color: black !important;
+    border: 2px solid $color1;
+    background-color: rgba($white, 0);
+    transition: all 0.3s ease;
+  }
+}

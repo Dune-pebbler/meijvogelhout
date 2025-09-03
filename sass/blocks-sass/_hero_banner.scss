@@ -1,0 +1,42 @@
+.hero {
+  position: relative;
+  // max-height: calc(100vh - 59px);
+
+  .hero-banner {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: calc(100vh - 62px);
+      object-fit: cover;
+      display: block;
+
+      @media only screen and (max-width: 480px) {
+        height: 400px;
+      }
+    }
+  }
+
+  .hero__banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(116, 102, 97, 0.75);
+    color: #fff;
+  }
+
+  .hero__overlay-text {
+    max-width: 900px;
+    @media only screen and (max-width: 480px) {
+    }
+    h1 {
+      padding: 0px 10px;
+    }
+  }
+}

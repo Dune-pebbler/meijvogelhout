@@ -1,0 +1,130 @@
+footer {
+  background-color: #403635;
+
+  .footer-banner {
+    padding: 80px 0 !important;
+    text-align: center;
+    font-family: $font1;
+    background-color: #eae2dc;
+    h2 {
+      margin-bottom: 30px;
+      font-family: $font1 !important;
+    }
+  }
+
+  .main-footer {
+    padding-top: 70px;
+    .row {
+      @media (max-width: 480px) {
+        .lower-footer {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+      .footer-menus {
+        display: flex;
+        column-gap: 50px;
+        li {
+          a {
+            color: white !important;
+          }
+        }
+      }
+      .contact-content {
+        font-family: $font2;
+        padding: 20px 0px;
+        em {
+          font-weight: 100;
+          font-style: normal;
+          a {
+            color: white !important;
+            text-decoration: none;
+          }
+        }
+      }
+      .mib-socials-container {
+        font-family: $font2;
+        .mib {
+          display: flex;
+          flex-direction: column;
+          padding: 20px 0px;
+          row-gap: 15px;
+        }
+        .socials {
+          display: flex;
+          flex-direction: column;
+          padding: 20px 0px;
+          row-gap: 15px;
+          .social-images {
+            display: flex;
+            column-gap: 10px;
+          }
+        }
+      }
+    }
+
+    .col-container {
+      display: flex;
+      justify-content: space-evenly;
+      @media (max-width: 480px) {
+        flex-direction: column;
+        .nav__logo-container {
+          justify-content: left;
+          img {
+            width: 50%;
+          }
+        }
+        .foot {
+          flex-direction: column;
+        }
+        .footer-menus {
+          display: flex;
+          font-size: 16px;
+          column-gap: 40px;
+          justify-content: left;
+        }
+      }
+    }
+    .footer-menu-container {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          margin: 5px 0;
+
+          a {
+            color: white;
+            text-decoration: none;
+            font-weight: 200;
+            font-family: $font2;
+
+            &:hover {
+              color: #d1bfa7; // Lighter shade for hover effect
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom-footer {
+    padding: 20px 0;
+    text-align: center;
+    font-family: $font2;
+    font-weight: 100;
+    .copyright {
+      text-decoration: none !important;
+      pointer-events: none;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

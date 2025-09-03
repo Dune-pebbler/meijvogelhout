@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+@import "utilities";
+@import "typography";
+@import "form";
+@import "blog";
+
+//template parts
+@import "block";
+@import "blocks-sass/hero_banner";
+@import "blocks-sass/hero_banner_slider";
+@import "blocks-sass/text_block";
+@import "blocks-sass/text_with_image";
+@import "blocks-sass/hero_text_with_image";
+@import "blocks-sass/cards";
+@import "blocks-sass/categorie_cards";
+@import "blocks-sass/inspiration";
+@import "blocks-sass/3_images";
+@import "blocks-sass/logo_slider";
+@import "blocks-sass/nav_pills";
+@import "blocks-sass/gallery";
+@import "blocks-sass/gmaps";
+@import "templateparts";
+
+@import "button";
+@import "animations";
+@import "archive";
+@import "header";
+@import "main";
+@import "footer";
+@import "404";

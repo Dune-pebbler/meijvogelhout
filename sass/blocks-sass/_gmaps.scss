@@ -1,0 +1,33 @@
+.gmaps {
+  padding: 70px 0px;
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .gmaps-shortcode__container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 56.25%; // 16:9 aspect ratio
+    overflow: hidden;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .gmaps-txt__container {
+      padding-left: 16px;
+      padding-right: 16px;
+      text-align: center;
+    }
+  }
+}

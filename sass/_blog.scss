@@ -1,0 +1,96 @@
+.blog-header {
+  background-color: $color3;
+  padding: 60px 0px;
+
+  .text-container {
+    text-align: center;
+    color: $white;
+    @media only screen and (max-width: 768px) {
+      text-align: left;
+    }
+    h1 {
+      color: $white;
+      margin: 0px;
+      font-family: $font1;
+      font-size: 50px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-weight: 100;
+    }
+  }
+}
+.content {
+  background-color: $color2;
+  padding: 60px 0px;
+
+  .row {
+    justify-content: center;
+
+    .col-12.col-lg-5 {
+      position: relative;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin: 20px 0;
+
+        max-height: 400px; // Optional: limit image height
+      }
+    }
+
+    h2 {
+      font-family: $font1;
+    }
+
+    h3 {
+      color: $black;
+      font-family: $font1;
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 400;
+    }
+
+    p {
+      font-weight: 200;
+    }
+    a {
+      color: #483c32 !important;
+    }
+  }
+}
+.images {
+  position: relative;
+  padding: 20px 0; // Add some vertical padding
+
+  &::after {
+    content: " ";
+    width: 100%;
+    height: 200px; // Reduce height of the background element
+    position: absolute;
+    top: 0%;
+    background-color: $color2;
+    z-index: -1;
+  }
+
+  .image-container {
+    width: 100%; // Maintain width
+    margin: 0 auto; // Center the container
+    max-width: 600px; // Optional: limit maximum width
+
+    .image {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto; // Allow height to adjust proportionally
+        max-height: 500px; // Optional: limit image height
+        object-fit: cover;
+      }
+    }
+  }
+}
+.blog-cards {
+  margin-top: -60px !important;
+}
